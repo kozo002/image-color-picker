@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style type="text/css">
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        background-color: #000;
+        color: #fff;
+      }
+      #bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        opacity: 0.85;
+      }
+      #fg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg"></div>
+    <div id="fg">
+      <input type="file" />
+      <div id="stage"></div>
+      <hr />
+      <h4>Colors</h4>
+      <ul class="colors"></ul>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
